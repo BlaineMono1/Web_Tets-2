@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <form method="post" , enctype="multipart/form-data">
+        <label> Выберете изображение</label>
+        <input type="file" name="image" id="image" required /><br /><br />
+        <label>Описание</label><br />
+        <textarea name="description" id="description" required style="font-weight: 300;"></textarea><br /><br />
+        <input type="submit" value="Отправить"/>
+    </form>
+</div>

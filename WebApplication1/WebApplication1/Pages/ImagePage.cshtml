@@ -1,0 +1,17 @@
+﻿@page
+@model WebApplication1.Pages.ImagePageModel
+@{
+    var imagePath = (string)TempData["ImagePath"];
+    var description = (string)TempData["Description"];
+}
+
+<h1>Изображение</h1>
+
+<img src="@imagePath" alt="Original image" />
+<br />
+<br />
+
+<img src="@imagePath" alt="Mini image" style="width: 128px; height: 128px;" />
+
+
+<p>Описание:@description</p>
